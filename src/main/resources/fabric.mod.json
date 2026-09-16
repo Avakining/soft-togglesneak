@@ -28,7 +28,7 @@
     "soft_togglesneak.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.19.5",
+    "fabricloader": ">=0.14.21",
     "fabric-api": ">=0.160.5+26.3",
     "java": ">=25",
     "minecraft": ">=26.3"
