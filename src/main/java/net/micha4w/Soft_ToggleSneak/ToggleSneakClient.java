@@ -13,7 +13,6 @@ import net.micha4w.Soft_ToggleSneak.iface.IToggleSneakConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 import com.mojang.blaze3d.platform.InputConstants;
-import org.lwjgl.glfw.GLFW;
 
 public class ToggleSneakClient implements ClientModInitializer {
 
@@ -38,8 +37,8 @@ public class ToggleSneakClient implements ClientModInitializer {
 
         toggleKeyBind = KeyMappingHelper.registerKeyMapping(new KeyMapping(
             "key.enable_toggle_sneak",
-            InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_RIGHT_SHIFT,
+            InputConstants.Type.KEYBOARD,
+			InputConstants.KEY_RSHIFT,
             KeyMapping.Category.MOVEMENT
         ));
 
